@@ -22,59 +22,72 @@
   </head>
 
   <body>
-    <!-- Верхня лінія / Top line -->
-
-    <header class="header">
-      <nav class="container">
+    <!--
+  |============================
+  | Header
+  |============================
+    -->
+    <header class="container header">
+      <div class="header-container">
         <a lang="en" href="/" class="logo link"
           >Web<span class="studio-header">Studio</span></a
         >
-        <ul class="site-nav list">
-          <li>
-            <a href="./index.html" class="header-link link current">Студія</a>
-          </li>
-          <li>
-            <a href="./portfolio.html" class="header-link link">Портфоліо</a>
-          </li>
-          <li><a href="/" class="header-link link">Контакти</a></li>
-        </ul>
-      </nav>
-      <div class="container">
-        <ul class="site-nav list">
-          <li>
-            <a href="info@devstudio.com" class="contacts-header link"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="+380961111111" class="contacts-header link"
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        <nav class="main-header">
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Студія</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Портфоліо</a>
+            </li>
+            <li class="item"><a href="/" class="link">Контакти</a></li>
+          </ul>
+        </nav>
+        <div class="header-container container">
+          <ul class="contacts-list-header list">
+            <li class="item">
+              <a href="info@devstudio.com" class="contacts-header link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="item">
+              <a href="+380961111111" class="contacts-header link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
+    <!--
+  |============================
+  | Projects
+  |============================
+    -->
     <main>
-      <section class="projects-list">
+      <section class="container section projects-list">
         <h1 hidden class="visually-hidden">Portfolio</h1>
-        <ul class="list">
-          <li><button type="button" class="projects-list-btn">Усі</button></li>
-          <li>
+        <ul class="filters-btn list">
+          <li class="item">
+            <button type="button" class="projects-list-btn">Усі</button>
+          </li>
+          <li class="item">
             <button type="button" class="projects-list-btn">Веб-сайти</button>
           </li>
-          <li>
+          <li class="item">
             <button type="button" class="projects-list-btn">Додатки</button>
           </li>
-          <li>
+          <li class="item">
             <button type="button" class="projects-list-btn">Дизайн</button>
           </li>
-          <li>
+          <li class="item">
             <button type="button" class="projects-list-btn">Маркетинг</button>
           </li>
         </ul>
-        <ul class="list">
-          <li>
+
+        <ul class="project-list card-set list">
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio01.jpg"
@@ -82,11 +95,13 @@
                 width="370"
                 height="294"
               />
-              <h2 class="project-name">Технокряк</h2></a
-            >
-            <a href="/" class="link"><p class="type-project">Веб-сайт</p></a>
+              <div class="project-card">
+                <h2 class="project-name">Технокряк</h2>
+                <p class="type-project">Веб-сайт</p>
+              </div>
+            </a>
           </li>
-          <li>
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio02.jpg"
@@ -94,13 +109,15 @@
                 width="370"
                 height="294"
               />
-              <h2 class="project-name">
-                Постер <span lang="en">New Orlean vs Golden Star</span>
-              </h2></a
+              <div class="project-card">
+                <h2 class="project-name">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="type-project">Дизайн</p>
+              </div></a
             >
-            <a href="" class="link"><p class="type-project">Дизайн</p></a>
           </li>
-          <li>
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio03.jpg"
@@ -108,13 +125,15 @@
                 width="370"
                 height="294"
               />
-              <h2 class="project-name">
-                Ресторан <span lang="en">Seafood</span>
-              </h2></a
+              <div class="project-card">
+                <h2 class="project-name">
+                  Ресторан <span lang="en">Seafood</span>
+                </h2>
+                <p class="type-project">Додаток</p>
+              </div></a
             >
-            <a href="" class="link"><p class="type-project">Додаток</p></a>
           </li>
-          <li>
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio04.jpg"
@@ -122,13 +141,15 @@
                 width="370"
                 height="294"
               />
-              <h2 class="project-name">
-                Проєкт <span lang="en">Prime</span>
-              </h2></a
+              <div class="project-card">
+                <h2 class="project-name">
+                  Проєкт <span lang="en">Prime</span>
+                </h2>
+                <p class="type-project">Маркетинг</p>
+              </div></a
             >
-            <a href="" class="link"><p class="type-project">Маркетинг</p></a>
           </li>
-          <li>
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio05.jpg"
@@ -136,13 +157,15 @@
                 width="370"
                 height="294"
               />
-              <h2 class="project-name">
-                Проєкт <span lang="en">Boxes</span>
-              </h2></a
+              <div class="project-card">
+                <h2 class="project-name">
+                  Проєкт <span lang="en">Boxes</span>
+                </h2>
+                <p class="type-project">Додаток</p>
+              </div></a
             >
-            <a href="" class="link"><p class="type-project">Додаток</p></a>
           </li>
-          <li>
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio06.jpg"
@@ -150,13 +173,15 @@
                 width="370"
                 height="294"
               />
-              <h2 lang="en" class="project-name">
-                Inspiration has no Borders
-              </h2></a
+              <div class="project-card">
+                <h2 lang="en" class="project-name">
+                  Inspiration has no Borders
+                </h2>
+                <p class="type-project">Веб-сайт</p>
+              </div></a
             >
-            <a href="" class="link"><p class="type-project">Веб-сайт</p></a>
           </li>
-          <li>
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio07.jpg"
@@ -164,13 +189,15 @@
                 width="370"
                 height="294"
               />
-              <h2 class="project-name">
-                Видання <span lang="en">Limited Edition</span>
-              </h2></a
+              <div class="project-card">
+                <h2 class="project-name">
+                  Видання <span lang="en">Limited Edition</span>
+                </h2>
+                <p class="type-project">Дизайн</p>
+              </div></a
             >
-            <a href="" class="link"><p class="type-project">Дизайн</p></a>
           </li>
-          <li>
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio08.jpg"
@@ -178,11 +205,13 @@
                 width="370"
                 height="294"
               />
-              <h2 class="project-name">Проєкт <span lang="en">LAB</span></h2></a
+              <div class="project-card">
+                <h2 class="project-name">Проєкт <span lang="en">LAB</span></h2>
+                <p class="type-project">Маркетинг</p>
+              </div></a
             >
-            <a href="" class="link"><p class="type-project">Маркетинг</p></a>
           </li>
-          <li>
+          <li class="project-item card-set-item">
             <a href="/" class="link"
               ><img
                 src="./images/portfolio09.jpg"
@@ -190,9 +219,11 @@
                 width="370"
                 height="294"
               />
-              <h2 lang="en" class="project-name">Growing Business</h2></a
+              <div class="project-card">
+                <h2 lang="en" class="project-name">Growing Business</h2>
+                <p class="type-project">Додаток</p>
+              </div></a
             >
-            <a href="" class="link"><p class="type-project">Додаток</p></a>
           </li>
         </ul>
       </section>
@@ -200,14 +231,14 @@
 
     <!-- Підвал / Footer -->
 
-    <footer class="contacts">
+    <footer class="section contacts">
       <div class="container">
         <a lang="en" href="/" class="logo link"
           >Web<span class="studio-footer">Studio</span></a
         >
         <address>
-          <ul class="list">
-            <li>
+          <ul class="footer-list list">
+            <li class="item">
               <a
                 href="https://goo.gl/maps/QRH2RzH7axmgxvUn7"
                 target="_blank"
@@ -216,13 +247,13 @@
                 >м. Київ, пр-т Лесі Українки, 26</a
               >
             </li>
-            <li>
-              <a href="info@devstudio.com" class="contacts-info link"
+            <li class="item">
+              <a href="info@devstudio.com" class="contacts-footer link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a href="+380961111111" class="contacts-info link"
+            <li class="item">
+              <a href="+380961111111" class="contacts-footer link"
                 >+38 096 111 11 11</a
               >
             </li>
