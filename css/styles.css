@@ -107,7 +107,7 @@ img {
 
 .header-container {
   display: flex;
-  padding: 25px;
+  padding: 0 15px;
   align-items: center;
 }
 
@@ -118,6 +118,7 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--aсcent-text-color);
+  padding: 25px 0;
 }
 
 .studio-header {
@@ -135,8 +136,7 @@ img {
 .site-nav .link,
 .contacts-list-header .link {
   display: flex;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding: 32px 0;
 }
 
 .site-nav .item + .item {
@@ -149,6 +149,7 @@ img {
 }
 .contacts-header {
   color: var(--paragraf-text-color);
+  font-weight: 500;
 }
 .contacts-list-header .item + .item {
   margin-left: 50px;
